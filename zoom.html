@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="maze.css"> <!--neha's css file-->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sigmar One' rel='stylesheet'>
+  <link rel="stylesheet" href="zoom.css">
+  <title>zoom</title>
+
+  
+  <script>
+        var index = 0;
+        var index2 = 0;
+        var imgsList = ["cars", "boo", "buzz", "up", "elastigirl", "rat", "brave", "crush"]
+        var labelList = ["Click here to zoom out for the answer!", "Click here to zoom back in!"]
+        var instList = ["Can you guess who/what is in the picture and which Pixar movie it's from?",
+        "It's Lightning McQueen from Cars!",
+        "It's Boo from Monsters Inc.!",
+        "It's Buzz from Toy Story!",
+        "It's the house from Up!",
+        "It's Elastigirl from The Incredibles!",
+        "It's ratatouille from Ratatouille!",
+        "It's Merideth from Brave!",
+        "It's Crush from Finding Nemo!"]
+        function changeImage() {
+            if (index == 0) {
+                index = 1;
+            }
+            else index = 0;
+            var image1 = document.getElementById("myImage");
+            image1.src = imgsList[index2] + (index+1) + ".jpg";
+            document.getElementById("clickme").innerHTML=labelList[index];
+            document.getElementById("inst").innerHTML=instList[index*(index2+1)];
+        }
+        function goNext() {
+            if (index2 == (imgsList.length - 1));
+            else index2++;
+            index = 1;
+            changeImage();
+        }
+        function goBack() {
+            if (index2 == 0);
+            else index2--;
+            index = 1;
+            changeImage();
+        }
+  </script>
+
+</head>
+
+<body>
+    <div id="dinosaurtypes">
+        <div class="img-container">
+          <img class="img-fluid" src="4 (F) Kailey Epstein - Dino Types.png" alt="Dinosaur Types">
+        </div>
+    </div>
+
+    <div id=zoom class="img-container">
+        <div id=zoomtitles >
+            <h4>
+                Guess the Zoomed-In Picture!
+            </h4>
+            <br>
+            <h6 id=inst>
+                Can you guess what/who is in the picture and which Pixar movie it's from?
+            </h6>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="img-container">
+            <img id="myImage" class="img-fluid" src="cars1.jpg" alt="Zoomed-In Picture Guessing Game" style="padding-bottom: 15%;">
+        </div>
+        <div id="zoombutton">
+            <button id="clickme" onclick="changeImage()">Click here to zoom out for the answer!</button>
+        </div>
+        <div id="switchbuttons" style="text-align:center;">
+            <button id="clickme" onclick="goBack()">Back</button><button id="clickme" onclick="goNext()">Next</button>
+        </div>
+        <br>
+    </div>
+
+    <div id="dinosaurtypes">
+        <div class="img-container">
+          <img class="img-fluid" src="4 (F) Kailey Epstein - Dino Types.png" alt="Dinosaur Types">
+        </div>
+    </div>
+</body>

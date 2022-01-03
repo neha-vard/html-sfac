@@ -1,0 +1,58 @@
+input {
+    all: unset;
+}
+
+label {
+    all: unset;
+}
+
+#unscdir {
+    background: rgba(189, 232, 245, 0.8);
+}
+
+#unsc {
+    background-image: url('upbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+}
+
+#unscbox {
+   background: rgba(189, 232, 245, 0.8);
+   padding-left: 1vw;
+   padding-right: 1vw;
+   padding-top: 1vh;
+}
+
+#sg1 {
+    padding-bottom: 1.5vh;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }
+
+h7 {
+    color: black;
+    font-family: quicksand;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+h8 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.25vh;
+    font-weight: bold;
+}

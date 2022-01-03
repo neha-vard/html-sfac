@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sigmar One' rel='stylesheet'>
+  <title>Crossword</title>
+</head>
+
+<body>
+    <style>
+        .buttons001 {
+            border: 1px solid black;
+            background-color: rgb(255, 174, 23);
+            color: black;
+            width: 5.9vh;
+            height: 5.9vh;
+            text-align: center;
+            cursor: context-menu;
+        }
+        .buttons002 {
+            border: 1px solid transparent;
+            background-color: transparent;
+            color: transparent;
+            width: 5.9vh;
+            height: 5.9vh;
+            text-align: center;
+            cursor: context-menu;
+        }
+        .boxes {
+            position: absolute;
+            transform: translate(43%, -182.5%);
+        }
+    </style>
+    <div id="crossword">
+            <div class="img-container">
+                <img class="img-fluid" src="crossword.png" alt="Crossword">
+                <div class="boxes">
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                    <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+                </div>
+            </div>
+    </div>
+</body>
+</html>
